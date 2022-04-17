@@ -1,15 +1,15 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry"
-  } ],
-  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode"
   } ]
 }, {
   "@id" : "_:genid10",
@@ -85,15 +85,15 @@
 }, {
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
-    "@value" : "1"
-  } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode"
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode"
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
   } ]
 }, {
   "@id" : "_:genid21",
@@ -200,7 +200,7 @@
     "@value" : "Alma Wheatley"
   } ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character"
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art",
@@ -311,6 +311,28 @@
     "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew"
   } ]
 }, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Character",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Person represented in the story"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Character"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/ontology/FictionalCharacter"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person"
+  }, {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew"
+  } ]
+}, {
   "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -322,7 +344,7 @@
     "@value" : "Chess Player"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character"
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City",
@@ -336,7 +358,7 @@
     "@value" : "City"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country",
@@ -376,9 +398,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person"
-  } ],
-  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character"
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director",
@@ -806,7 +825,7 @@
     "@value" : "Define in which episodes a character appears"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character"
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Character"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -934,7 +953,7 @@
     "@value" : "Define which actors or actresses played a character"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character"
+    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Character"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1150,25 +1169,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
-  } ]
-}, {
-  "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Person represented in the story"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Character"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
-    "@value" : "https://dbpedia.org/ontology/FictionalCharacter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person"
-  }, {
-    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
