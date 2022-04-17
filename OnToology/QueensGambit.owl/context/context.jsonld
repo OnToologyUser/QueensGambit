@@ -1,0 +1,174 @@
+{
+  "@context" : {
+    "Art" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art"
+    },
+    "Relationship" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Relationship"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country"
+    },
+    "Main" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Main"
+    },
+    "Music" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Music"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director"
+    },
+    "Cast" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast"
+    },
+    "categoryAward" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "CountryWithTournament" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament"
+    },
+    "Soundtrack" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack"
+    },
+    "ChessPlayer" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer"
+    },
+    "awardName" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isInCountry" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry",
+      "@type" : "@id"
+    },
+    "Character" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character"
+    },
+    "appearsInEpisode" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode",
+      "@type" : "@id"
+    },
+    "wasCelebratedInYear" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear",
+      "@type" : "@id"
+    },
+    "countryName" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode"
+    },
+    "YearWithTournament" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person"
+    },
+    "Writer" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Writer"
+    },
+    "Award" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award"
+    },
+    "Crew" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew"
+    },
+    "Producer" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Producer"
+    },
+    "GuestStarring" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#GuestStarring"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "playedInGame" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame",
+      "@type" : "@id"
+    },
+    "personName" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "tournamentName" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wasPlayedInTournament" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament",
+      "@type" : "@id"
+    },
+    "wasPlayedInCity" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity",
+      "@type" : "@id"
+    },
+    "songName" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Tournament" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament"
+    },
+    "Year" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year"
+    },
+    "Game" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game"
+    },
+    "isPlayedBy" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City"
+    },
+    "cityName" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "trackNumber" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "Rival" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "yearNumber" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "Recurring" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Recurring"
+    },
+    "episodeNumber" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "relation" : {
+      "@id" : "http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    }
+  }
+}

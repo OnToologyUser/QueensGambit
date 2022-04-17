@@ -1,0 +1,584 @@
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about the tv series \"The Queen's Gambit\" created by David Mellado Martín"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#comment> "Define in which episodes a character appears"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.w3.org/2000/01/rdf-schema#label> "Appears in episode"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines what city is in what country"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> <http://www.w3.org/2000/01/rdf-schema#label> "Is in country"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Define which actors or actresses played a character"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy> <http://www.w3.org/2000/01/rdf-schema#label> "Is played by"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which player played what game"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame> <http://www.w3.org/2000/01/rdf-schema#label> "Played in game"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the year in which a tournament was played"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear> <http://www.w3.org/2000/01/rdf-schema#label> "Was celebrated in the year"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines in which city a tournament was played"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity> <http://www.w3.org/2000/01/rdf-schema#label> "Was played in city"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines in which tournament was played a game"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament> <http://www.w3.org/2000/01/rdf-schema#label> "Was played in tournament"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of an award"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName> <http://www.w3.org/2000/01/rdf-schema#label> "Award name"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward> <http://www.w3.org/2000/01/rdf-schema#comment> "Category of an award"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward> <http://www.w3.org/2000/01/rdf-schema#label> "Category award"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a city"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> <http://www.w3.org/2000/01/rdf-schema#label> "City name"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a country"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> <http://www.w3.org/2000/01/rdf-schema#label> "Country name"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of the episode"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Episode number"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a person"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> <http://www.w3.org/2000/01/rdf-schema#label> "Person name"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Relationship> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship of a character"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation> <http://www.w3.org/2000/01/rdf-schema#label> "Relation"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a song"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> <http://www.w3.org/2000/01/rdf-schema#label> "Song name"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of a episode"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> <http://www.w3.org/2000/01/rdf-schema#label> "Title"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a tournament"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName> <http://www.w3.org/2000/01/rdf-schema#label> "Tournament name"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of the track in the soundtrack"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Track number"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber> <http://www.w3.org/2000/01/rdf-schema#comment> "The year"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber> <http://www.w3.org/2000/01/rdf-schema#label> "Year number"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art> <http://www.w3.org/2000/01/rdf-schema#comment> "Crew Members working on the art of the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art> <http://www.w3.org/2000/01/rdf-schema#label> "Art"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> <http://www.w3.org/2000/01/rdf-schema#comment> "Awards and prizes of the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> <http://www.w3.org/2000/01/rdf-schema#label> "Award"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/award" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> <http://www.w3.org/2000/01/rdf-schema#comment> "Cast of the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> <http://www.w3.org/2000/01/rdf-schema#label> "Cast"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> <http://www.w3.org/2000/01/rdf-schema#comment> "Character that play chess"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> <http://www.w3.org/2000/01/rdf-schema#label> "Chess Player"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> .
+_:genid1 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> <http://www.w3.org/2000/01/rdf-schema#comment> "City in which the series takes place"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Country in which the series takes place"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament> <http://www.w3.org/2000/01/rdf-schema#comment> "Country hosting a tournament"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament> <http://www.w3.org/2000/01/rdf-schema#label> "Country with a tournament"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> <http://www.w3.org/2000/01/rdf-schema#comment> "Real people that work in the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> <http://www.w3.org/2000/01/rdf-schema#label> "Crew"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director> <http://www.w3.org/2000/01/rdf-schema#comment> "Crew members working on directing the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director> <http://www.w3.org/2000/01/rdf-schema#label> "Director"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> <http://www.w3.org/2000/01/rdf-schema#comment> "Episode of the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> <http://www.w3.org/2000/01/rdf-schema#label> "Episode"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/TelevisionEpisode" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game> <http://www.w3.org/2000/01/rdf-schema#comment> "Chess games played in the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game> <http://www.w3.org/2000/01/rdf-schema#label> "Game"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#GuestStarring
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#GuestStarring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#GuestStarring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#GuestStarring> <http://www.w3.org/2000/01/rdf-schema#comment> "Known actor or actress that appears in some moment of the series, but has not a regular role"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#GuestStarring> <http://www.w3.org/2000/01/rdf-schema#label> "Guest Starring"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Main
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Main> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Main> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Main> <http://www.w3.org/2000/01/rdf-schema#comment> "Cast that represent the main characters in the story"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Main> <http://www.w3.org/2000/01/rdf-schema#label> "Main"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Music
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Music> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Music> <http://www.w3.org/2000/01/rdf-schema#comment> "Crew members working on the music of the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Music> <http://www.w3.org/2000/01/rdf-schema#label> "Music"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Real or fictitious person"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Producer
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Producer> <http://www.w3.org/2000/01/rdf-schema#comment> "Crew members working on the production of the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Producer> <http://www.w3.org/2000/01/rdf-schema#label> "Producer"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Recurring
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Recurring> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Recurring> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Recurring> <http://www.w3.org/2000/01/rdf-schema#comment> "Cast that do not represent the main characters, but appears frequently."@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Recurring> <http://www.w3.org/2000/01/rdf-schema#label> "Recurring"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Relationship
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Relationship> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Relationship> <http://www.w3.org/2000/01/rdf-schema#comment> "Relations of characters with the main protagonist"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Relationship> <http://www.w3.org/2000/01/rdf-schema#label> "Relationship"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival> <http://www.w3.org/2000/01/rdf-schema#comment> "Chess player that was a rival for the protagonist"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival> <http://www.w3.org/2000/01/rdf-schema#label> "Rival"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#comment> "Song of the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> <http://www.w3.org/2000/01/rdf-schema#label> "Soundtrack"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> <http://www.w3.org/2000/01/rdf-schema#comment> "Chess tournament held in the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> <http://www.w3.org/2000/01/rdf-schema#label> "Tournament"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Writer
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Writer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Writer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Writer> <http://www.w3.org/2000/01/rdf-schema#comment> "Crew members working on the series scripts"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Writer> <http://www.w3.org/2000/01/rdf-schema#label> "Writer"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year> <http://www.w3.org/2000/01/rdf-schema#comment> "Year elapsed in the series"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year> <http://www.w3.org/2000/01/rdf-schema#label> "Year"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament> <http://www.w3.org/2000/01/rdf-schema#comment> "Year of the series in which a tournament was held"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament> <http://www.w3.org/2000/01/rdf-schema#label> "Year with a tournament"@en .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character
+<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person> .
+<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> <http://www.w3.org/2000/01/rdf-schema#comment> "Person represented in the story"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> <http://www.w3.org/2000/01/rdf-schema#label> "Character"@en .
+<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/FictionalCharacter" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> "Alma Wheatley" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> "Benjamin Watts" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Limited_Series_or_Television_Film
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Limited_Series_or_Television_Film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Limited_Series_or_Television_Film> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Limited_Series_or_Television_Film> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName> "Golden Globe Awards" .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Limited_Series_or_Television_Film> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward> "Best Limited Series or Television Film" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Score_Soundtrack_for_Visual_Media
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Score_Soundtrack_for_Visual_Media> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Score_Soundtrack_for_Visual_Media> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Score_Soundtrack_for_Visual_Media> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName> "Grammy Awards" .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Score_Soundtrack_for_Visual_Media> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward> "Best Score Soundtrack for Visual Media" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E1_Openings> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName> "Elizabeth \"Beth\" Olivia Harmon" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E1_Openings
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E1_Openings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E1_Openings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E1_Openings> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E1_Openings> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> "Openings" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> "2"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> "Exchanges" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> "3"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> "Doubled Pawns" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> "4"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> "Middle Game" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> "5"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> "Fork" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> "6"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> "Adjournment" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber> "7"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title> "End Game" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#France
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#France> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#France> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> "France" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Lexington
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Lexington> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Lexington> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Lexington> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#USA> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Lexington> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> "Lexington" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Moscow
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Moscow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Moscow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Moscow> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName> "Moscow" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Paris
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Paris> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Paris> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> "Paris" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Russia
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Russia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Russia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Russia> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> "Russia" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Beth_Story
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Beth_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Beth_Story> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Beth_Story> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> "Beth's Story" .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Beth_Story> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> "2"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Main_Title
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Main_Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Main_Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Main_Title> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> "Main Title" .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Main_Title> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> "1"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Methuen_Home_For_Children_1957
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Methuen_Home_For_Children_1957> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Methuen_Home_For_Children_1957> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Methuen_Home_For_Children_1957> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName> "Methuen Home For Children 1957" .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Methuen_Home_For_Children_1957> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber> "3"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#USA
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#USA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#USA> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName> "United States of America" .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year_1963
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year_1963> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year_1963> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year_1963> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber> "1963"^^<http://www.w3.org/2001/XMLSchema#positiveInteger> .
+# 
+# http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year_1963> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Lexington> .
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName> "Kentucky State Championship (1963)" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<urn:swrl:var#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#g> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#co> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid10 <http://www.w3.org/2003/11/swrl#body> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid12 .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y> .
+_:genid12 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid12 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid14 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid10 <http://www.w3.org/2003/11/swrl#head> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y> .
+_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid17 <http://www.w3.org/2003/11/swrl#body> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid19 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c> .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> .
+_:genid21 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#co> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> .
+_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/2003/11/swrl#head> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#co> .
+_:genid25 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid3 <http://www.w3.org/2003/11/swrl#body> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g> .
+_:genid5 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid5 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
+_:genid7 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid7 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid3 <http://www.w3.org/2003/11/swrl#head> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid9 .
+_:genid9 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> .
+_:genid9 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

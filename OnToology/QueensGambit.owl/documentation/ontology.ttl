@@ -1,0 +1,644 @@
+@prefix : <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#> .
+
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit> rdf:type owl:Ontology ;
+                                                                         <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                                                         rdfs:comment "Ontology about the tv series \"The Queen's Gambit\" created by David Mellado Martín"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode
+:appearsInEpisode rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+                  rdfs:range :Episode ;
+                  rdfs:comment "Define in which episodes a character appears"@en ;
+                  rdfs:label "Appears in episode"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isInCountry
+:isInCountry rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :City ;
+             rdfs:range :Country ;
+             rdfs:comment "Defines what city is in what country"@en ;
+             rdfs:label "Is in country"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy
+:isPlayedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+            rdfs:range :Cast ;
+            rdfs:comment "Define which actors or actresses played a character"@en ;
+            rdfs:label "Is played by"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#playedInGame
+:playedInGame rdf:type owl:ObjectProperty ;
+              rdfs:domain :ChessPlayer ;
+              rdfs:range :Game ;
+              rdfs:comment "Indicates which player played what game"@en ;
+              rdfs:label "Played in game"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasCelebratedInYear
+:wasCelebratedInYear rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Tournament ;
+                     rdfs:range :Year ;
+                     rdfs:comment "Defines the year in which a tournament was played"@en ;
+                     rdfs:label "Was celebrated in the year"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInCity
+:wasPlayedInCity rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Tournament ;
+                 rdfs:range :City ;
+                 rdfs:comment "Defines in which city a tournament was played"@en ;
+                 rdfs:label "Was played in city"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#wasPlayedInTournament
+:wasPlayedInTournament rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :Game ;
+                       rdfs:range :Tournament ;
+                       rdfs:comment "Defines in which tournament was played a game"@en ;
+                       rdfs:label "Was played in tournament"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#awardName
+:awardName rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Award ;
+           rdfs:range xsd:string ;
+           rdfs:comment "Name of an award"@en ;
+           rdfs:label "Award name"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#categoryAward
+:categoryAward rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Award ;
+               rdfs:range xsd:string ;
+               rdfs:comment "Category of an award"@en ;
+               rdfs:label "Category award"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#cityName
+:cityName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :City ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of a city"@en ;
+          rdfs:label "City name"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#countryName
+:countryName rdf:type owl:DatatypeProperty ;
+             rdfs:subPropertyOf owl:topDataProperty ;
+             rdfs:domain :Country ;
+             rdfs:range xsd:string ;
+             rdfs:comment "Name of a country"@en ;
+             rdfs:label "Country name"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#episodeNumber
+:episodeNumber rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Episode ;
+               rdfs:range xsd:positiveInteger ;
+               rdfs:comment "Number of the episode"@en ;
+               rdfs:label "Episode number"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#personName
+:personName rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string ;
+            rdfs:comment "Name of a person"@en ;
+            rdfs:label "Person name"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#relation
+:relation rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Relationship ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Relationship of a character"@en ;
+          rdfs:label "Relation"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#songName
+:songName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Soundtrack ;
+          rdfs:range xsd:string ;
+          rdfs:comment "Name of a song"@en ;
+          rdfs:label "Song name"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty ;
+       rdfs:domain :Episode ;
+       rdfs:range xsd:string ;
+       rdfs:comment "Title of a episode"@en ;
+       rdfs:label "Title"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#tournamentName
+:tournamentName rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :Tournament ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Name of a tournament"@en ;
+                rdfs:label "Tournament name"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#trackNumber
+:trackNumber rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Soundtrack ;
+             rdfs:range xsd:positiveInteger ;
+             rdfs:comment "Number of the track in the soundtrack"@en ;
+             rdfs:label "Track number"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#yearNumber
+:yearNumber rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf owl:topDataProperty ;
+            rdfs:domain :Year ;
+            rdfs:range xsd:positiveInteger ;
+            rdfs:comment "The year"@en ;
+            rdfs:label "Year number"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Art
+:Art rdf:type owl:Class ;
+     rdfs:subClassOf :Crew ;
+     rdfs:comment "Crew Members working on the art of the series"@en ;
+     rdfs:label "Art"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Award
+:Award rdf:type owl:Class ;
+       rdfs:comment "Awards and prizes of the series"@en ;
+       rdfs:label "Award"@en ;
+       rdfs:sameAs "https://dbpedia.org/ontology/award" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Cast
+:Cast rdf:type owl:Class ;
+      rdfs:subClassOf :Crew ;
+      rdfs:comment "Cast of the series"@en ;
+      rdfs:label "Cast"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer
+:ChessPlayer rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+             rdfs:comment "Character that play chess"@en ;
+             rdfs:label "Chess Player"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :isInCountry ;
+                        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                        owl:onClass :Country
+                      ] ;
+      rdfs:comment "City in which the series takes place"@en ;
+      rdfs:label "City"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Country
+:Country rdf:type owl:Class ;
+         rdfs:comment "Country in which the series takes place"@en ;
+         rdfs:label "Country"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#CountryWithTournament
+:CountryWithTournament rdf:type owl:Class ;
+                       rdfs:subClassOf :Country ;
+                       rdfs:comment "Country hosting a tournament"@en ;
+                       rdfs:label "Country with a tournament"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew
+:Crew rdf:type owl:Class ;
+      rdfs:subClassOf :Person ;
+      owl:disjointWith <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+      rdfs:comment "Real people that work in the series"@en ;
+      rdfs:label "Crew"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Crew ;
+          rdfs:comment "Crew members working on directing the series"@en ;
+          rdfs:label "Director"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:comment "Episode of the series"@en ;
+         rdfs:label "Episode"@en ;
+         rdfs:sameAs "https://dbpedia.org/ontology/TelevisionEpisode" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Game
+:Game rdf:type owl:Class ;
+      rdfs:comment "Chess games played in the series"@en ;
+      rdfs:label "Game"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#GuestStarring
+:GuestStarring rdf:type owl:Class ;
+               rdfs:subClassOf :Cast ;
+               rdfs:comment "Known actor or actress that appears in some moment of the series, but has not a regular role"@en ;
+               rdfs:label "Guest Starring"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Main
+:Main rdf:type owl:Class ;
+      rdfs:subClassOf :Cast ;
+      rdfs:comment "Cast that represent the main characters in the story"@en ;
+      rdfs:label "Main"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Music
+:Music rdf:type owl:Class ;
+       rdfs:subClassOf :Crew ;
+       rdfs:comment "Crew members working on the music of the series"@en ;
+       rdfs:label "Music"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Real or fictitious person"@en ;
+        rdfs:label "Person"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Producer
+:Producer rdf:type owl:Class ;
+          rdfs:subClassOf :Crew ;
+          rdfs:comment "Crew members working on the production of the series"@en ;
+          rdfs:label "Producer"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Recurring
+:Recurring rdf:type owl:Class ;
+           rdfs:subClassOf :Cast ;
+           rdfs:comment "Cast that do not represent the main characters, but appears frequently."@en ;
+           rdfs:label "Recurring"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Relationship
+:Relationship rdf:type owl:Class ;
+              rdfs:comment "Relations of characters with the main protagonist"@en ;
+              rdfs:label "Relationship"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Rival
+:Rival rdf:type owl:Class ;
+       rdfs:subClassOf :ChessPlayer ;
+       rdfs:comment "Chess player that was a rival for the protagonist"@en ;
+       rdfs:label "Rival"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Soundtrack
+:Soundtrack rdf:type owl:Class ;
+            rdfs:comment "Song of the series"@en ;
+            rdfs:label "Soundtrack"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Tournament
+:Tournament rdf:type owl:Class ;
+            rdfs:comment "Chess tournament held in the series"@en ;
+            rdfs:label "Tournament"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Writer
+:Writer rdf:type owl:Class ;
+        rdfs:subClassOf :Crew ;
+        rdfs:comment "Crew members working on the series scripts"@en ;
+        rdfs:label "Writer"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year
+:Year rdf:type owl:Class ;
+      rdfs:comment "Year elapsed in the series"@en ;
+      rdfs:label "Year"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#YearWithTournament
+:YearWithTournament rdf:type owl:Class ;
+                    rdfs:subClassOf :Year ;
+                    rdfs:comment "Year of the series in which a tournament was held"@en ;
+                    rdfs:label "Year with a tournament"@en .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character
+<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> rdf:type owl:Class ;
+                                                                                   rdfs:subClassOf :Person ,
+                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                     owl:onProperty :appearsInEpisode ;
+                                                                                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                     owl:onClass :Episode
+                                                                                                   ] ;
+                                                                                   rdfs:comment "Person represented in the story"@en ;
+                                                                                   rdfs:label "Character"@en ;
+                                                                                   rdfs:sameAs "https://dbpedia.org/ontology/FictionalCharacter" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley
+:Alma_Wheatley rdf:type owl:NamedIndividual ,
+                        <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+               :appearsInEpisode :E2_Exchanges ,
+                                 :E3_Doubled_Pawns ,
+                                 :E4_Middle_Game ;
+               :personName "Alma Wheatley" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Benny_Watts
+:Benny_Watts rdf:type owl:NamedIndividual ,
+                      :ChessPlayer ;
+             :appearsInEpisode :E3_Doubled_Pawns ,
+                               :E5_Fork ,
+                               :E6_Adjournment ,
+                               :E7_End_Game ;
+             :personName "Benjamin Watts" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Limited_Series_or_Television_Film
+:Best_Limited_Series_or_Television_Film rdf:type owl:NamedIndividual ,
+                                                 :Award ;
+                                        :awardName "Golden Globe Awards" ;
+                                        :categoryAward "Best Limited Series or Television Film" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Best_Score_Soundtrack_for_Visual_Media
+:Best_Score_Soundtrack_for_Visual_Media rdf:type owl:NamedIndividual ,
+                                                 :Award ;
+                                        :awardName "Grammy Awards" ;
+                                        :categoryAward "Best Score Soundtrack for Visual Media" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Beth_Harmon
+:Beth_Harmon rdf:type owl:NamedIndividual ,
+                      :ChessPlayer ;
+             :appearsInEpisode :E1_Openings ,
+                               :E2_Exchanges ,
+                               :E3_Doubled_Pawns ,
+                               :E4_Middle_Game ,
+                               :E5_Fork ,
+                               :E6_Adjournment ,
+                               :E7_End_Game ;
+             :personName "Elizabeth \"Beth\" Olivia Harmon" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E1_Openings
+:E1_Openings rdf:type owl:NamedIndividual ,
+                      :Episode ;
+             :episodeNumber "1"^^xsd:positiveInteger ;
+             :title "Openings" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E2_Exchanges
+:E2_Exchanges rdf:type owl:NamedIndividual ,
+                       :Episode ;
+              :episodeNumber "2"^^xsd:positiveInteger ;
+              :title "Exchanges" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E3_Doubled_Pawns
+:E3_Doubled_Pawns rdf:type owl:NamedIndividual ,
+                           :Episode ;
+                  :episodeNumber "3"^^xsd:positiveInteger ;
+                  :title "Doubled Pawns" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E4_Middle_Game
+:E4_Middle_Game rdf:type owl:NamedIndividual ,
+                         :Episode ;
+                :episodeNumber "4"^^xsd:positiveInteger ;
+                :title "Middle Game" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E5_Fork
+:E5_Fork rdf:type owl:NamedIndividual ,
+                  :Episode ;
+         :episodeNumber "5"^^xsd:positiveInteger ;
+         :title "Fork" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E6_Adjournment
+:E6_Adjournment rdf:type owl:NamedIndividual ,
+                         :Episode ;
+                :episodeNumber "6"^^xsd:positiveInteger ;
+                :title "Adjournment" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#E7_End_Game
+:E7_End_Game rdf:type owl:NamedIndividual ,
+                      :Episode ;
+             :episodeNumber "7"^^xsd:positiveInteger ;
+             :title "End Game" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#France
+:France rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :countryName "France" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Lexington
+:Lexington rdf:type owl:NamedIndividual ,
+                    :City ;
+           :isInCountry :USA ;
+           :cityName "Lexington" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Moscow
+:Moscow rdf:type owl:NamedIndividual ,
+                 :City ;
+        :cityName "Moscow" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Paris
+:Paris rdf:type owl:NamedIndividual ,
+                :City ;
+       :countryName "Paris" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Russia
+:Russia rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :countryName "Russia" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Beth_Story
+:Song_Beth_Story rdf:type owl:NamedIndividual ,
+                          :Soundtrack ;
+                 :songName "Beth's Story" ;
+                 :trackNumber "2"^^xsd:positiveInteger .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Main_Title
+:Song_Main_Title rdf:type owl:NamedIndividual ,
+                          :Soundtrack ;
+                 :songName "Main Title" ;
+                 :trackNumber "1"^^xsd:positiveInteger .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Song_Methuen_Home_For_Children_1957
+:Song_Methuen_Home_For_Children_1957 rdf:type owl:NamedIndividual ,
+                                              :Soundtrack ;
+                                     :songName "Methuen Home For Children 1957" ;
+                                     :trackNumber "3"^^xsd:positiveInteger .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#USA
+:USA rdf:type owl:NamedIndividual ,
+              :Country ;
+     :countryName "United States of America" .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Year_1963
+:Year_1963 rdf:type owl:NamedIndividual ,
+                    :Year ;
+           :yearNumber "1963"^^xsd:positiveInteger .
+
+
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)
+<http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Kentucky_State_Championship_(1963)> rdf:type owl:NamedIndividual ,
+                                                                                                                    :Tournament ;
+                                                                                                           :wasCelebratedInYear :Year_1963 ;
+                                                                                                           :wasPlayedInCity :Lexington ;
+                                                                                                           :tournamentName "Kentucky State Championship (1963)" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#g> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#co> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Tournament ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :wasCelebratedInYear ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#y>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :YearWithTournament ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isInCountry ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#co>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :wasPlayedInCity ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#c>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Tournament ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#t>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CountryWithTournament ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#co>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ChessPlayer ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :playedInGame ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#g>
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Rival ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
