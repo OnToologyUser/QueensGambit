@@ -28,7 +28,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#appearsInEpisode
 :appearsInEpisode rdf:type owl:ObjectProperty ;
-                  rdfs:domain <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+                  rdfs:domain :Character ;
                   rdfs:range :Episode ;
                   rdfs:comment "Define in which episodes a character appears"@en ;
                   rdfs:label "Appears in episode"@en .
@@ -45,7 +45,7 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 ###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#isPlayedBy
 :isPlayedBy rdf:type owl:ObjectProperty ;
-            rdfs:domain <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+            rdfs:domain :Character ;
             rdfs:range :Cast ;
             rdfs:comment "Define which actors or actresses played a character"@en ;
             rdfs:label "Is played by"@en .
@@ -217,9 +217,23 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
       rdfs:label "Cast"@en .
 
 
+###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Character
+:Character rdf:type owl:Class ;
+           rdfs:subClassOf :Person ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :appearsInEpisode ;
+                             owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                             owl:onClass :Episode
+                           ] ;
+           owl:disjointWith :Crew ;
+           rdfs:comment "Person represented in the story"@en ;
+           rdfs:label "Character"@en ;
+           rdfs:sameAs "https://dbpedia.org/ontology/FictionalCharacter" .
+
+
 ###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#ChessPlayer
 :ChessPlayer rdf:type owl:Class ;
-             rdfs:subClassOf <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+             rdfs:subClassOf :Character ;
              rdfs:comment "Character that play chess"@en ;
              rdfs:label "Chess Player"@en .
 
@@ -251,7 +265,6 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 ###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Crew
 :Crew rdf:type owl:Class ;
       rdfs:subClassOf :Person ;
-      owl:disjointWith <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
       rdfs:comment "Real people that work in the series"@en ;
       rdfs:label "Crew"@en .
 
@@ -362,26 +375,13 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
                     rdfs:label "Year with a tournament"@en .
 
 
-###  http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character
-<http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> rdf:type owl:Class ;
-                                                                                   rdfs:subClassOf :Person ,
-                                                                                                   [ rdf:type owl:Restriction ;
-                                                                                                     owl:onProperty :appearsInEpisode ;
-                                                                                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                                                                                                     owl:onClass :Episode
-                                                                                                   ] ;
-                                                                                   rdfs:comment "Person represented in the story"@en ;
-                                                                                   rdfs:label "Character"@en ;
-                                                                                   rdfs:sameAs "https://dbpedia.org/ontology/FictionalCharacter" .
-
-
 #################################################################
 #    Individuals
 #################################################################
 
 ###  http://www.semanticweb.org/david/ontologies/2022/3/the-queen's-gambit#Alma_Wheatley
 :Alma_Wheatley rdf:type owl:NamedIndividual ,
-                        <http://www.semanticweb.org/david/ontologies/2022/3/untitled-ontology-4#Character> ;
+                        :Character ;
                :appearsInEpisode :E2_Exchanges ,
                                  :E3_Doubled_Pawns ,
                                  :E4_Middle_Game ;
